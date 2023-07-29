@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+</head>
+<link rel="stylesheet" href="design.css">
+<body>
+<div class="container">
+    <form id="details" action="use.jsp" method="post"> 
+        
+    
+    <div class="form-box">
+<h1>Student Registration Form</h1>
+
+<div class="input-form"> <form action="#" method="post">
+    <div class="input-field">
+  <label for="first name">First Name :</label>
+  <input type="text" id="first name" placeholder="First Name" name="first name" required><br><br>
+</div>
+
+  <div class="input-field"> 
+  <label for="second name">Second Name :</label>
+  <input type="text" id="second name" placeholder="second Name" name="second name" required><br><br>
+</div>
+
+<div class="input-field">
+  <label for="email">Email :</label>
+  <input type="email" id="email" placeholder="Email" name="email" required><br><br>
+</div>
+
+<div class="input-field">
+  <label for="password">Password :</label>
+  <input type="password" id="password" placeholder="password" name="password" required><br><br>
+</div>
+
+<div class="input-field">
+  <label for="Gender">Gender :</label>
+  <select id="Gender" name="Gender"  required>
+    <option value="" disabled selected>Select your Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Transgender"> Transgender </option>
+
+  </select><br><br>
+</div>
+
+<div class="input-field">
+  <label for="course">Course :</label>
+  <select id="course" name="course" required>
+    <option value="" disabled selected>Select your course</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Information technology">Information technology</option>
+    <option value="Artificial intelligence"> Artificial intelligence </option>
+
+  </select><br><br>
+</div>
+
+<button type="submit">Submit</button> <br><br>
+
+</form>
+ </div>
+ <form action="fetch.jsp" method="post">
+
+  <button name="db" type="submit">DataBase</button>
+  </form>
+</div>
+
+
+</div>
+
+</body>
+</html>
